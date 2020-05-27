@@ -1,105 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>AdS ChatBot</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
-  <!-- Custom styles for this template -->
-  <link href="css/coming-soon.min.css" rel="stylesheet">
-
+    <meta http-equiv="refresh" content="1;url=main.html" </>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cargandou...</title>
 </head>
-
-<body>
-
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="mp4/bg.mp4" type="video/mp4">
-  </video>
-
-  
-  
-
-      
-<div class="container">
-  <div class="row">
-    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-      <div class="card card-signin my-5">
-        <div class="card-body">
-          <h5 class="card-title text-center">ChatBot AdS</h5>
-          <iframe
-    allow="microphone;"
-    width="100%"
-    height="550"
-    src="https://console.dialogflow.com/api-client/demo/embedded/fb7fb83d-387c-41e2-9d14-a90a55535196">
-</iframe>
-
-        <h6> Preguntale lo q quieras ;)</h6>
-        </div>
+<div class=background>
+    <div id=load-container>
+      <div class=illumination></div>
+      <div id=load-contained>
+        <svg width=50 height=50 class=svg>
+          <path d="M 25,2 A 23,23,0,1,1,25,49  A 23,23,0,1,1,25,2" fill=none stroke-linecap=round stroke-width=3 stroke=#244></path>
+          <path class=spinner-loading d="M 25,2 A 23,23,0,1,1,25,49  A 23,23,0,1,1,25,2" stroke-linecap=round stroke-width=3></path>
+        </svg>
       </div>
+      <span class=valign></span>
     </div>
+    <span class=valign></span>
   </div>
-</div>
-
-  <div class="social-icons">
-    <ul class="list-unstyled text-center mb-0">
-      <li class="list-unstyled-item">
-        <a href="https://github.com/mecsafonso/ChatBot-AdS">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/coming-soon.min.js"></script>
-
-</body>
-
 </html>
-<style> :root {
-  --input-padding-x: 1.5rem;
-  --input-padding-y: .75rem;
-}
+  
+<style>
 
 body {
-  background: #007bff;
-  background: linear-gradient(to right, #0062E6, #33AEFF);
+  margin: 0px;
+}
+p {
+  margin: 0;
+  padding: 0;
+  color: wheat;
+}
+.background {
+  background: #355 url("http://img11.hostingpics.net/pics/605268leaves1400.png")
+    no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+#load-container {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 2px;
+  background: linear-gradient(-3deg, #2b4d4d 49.9%, #2f5050 50%);
+  height: 50%;
+  width: 50%;
+  min-height: 250px;
+  min-width: 250px;
+  position: relative;
+  box-shadow: 3px 3px 1px #344;
+  text-align: center;
+}
+.illumination {
+  opacity: 0.2;
+  background: url("http://img11.hostingpics.net/pics/302315ill.png") no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#load-contained {
+  display: inline-block;
+  vertical-align: middle;
+  color: #c70;
+}
+.valign {
+  height: 50%;
+  display: inline-block;
+}
+.svg {
+  position: relative;
+  border-radius: 24px;
+}
+.spinner-loading {
+  stroke: chocolate;
+  opacity: 1;
+  fill: none;
+  stroke-dasharray: 155.4;
+  -webkit-animation: spin-load 1.9s linear infinite;
+  animation: spin-load 1.9s linear infinite;
+}
+@-webkit-keyframes spin-load {
+  0% {
+    stroke-dashoffset: 310.8;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes spin-load {
+  0% {
+    stroke-dashoffset: 310.8;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.info {
+  opacity: 1;
+  font: normal 15px arial;
+  animation: append 500ms ease-out;
+  -webkit-animation: append 500ms ease-out;
+  padding: 8px;
+  margin: 0px;
+}
+@-webkit-keyframes append {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+  }
+  50% {
+    font-size: 15px;
+    opacity: 0.2;
+  }
+  100% {
+    font-size: 15px;
+    opacity: 1;
+  }
+}
+@keyframes append {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+  }
+  50% {
+    font-size: 15px;
+    opacity: 0.2;
+  }
+  100% {
+    font-size: 15px;
+    opacity: 1;
+  }
 }
 
-.card-signin {
-  border: 0;
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-}
+  </style>
+  <script>
+  
 
-.card-signin .card-title {
-  margin-bottom: 2rem;
-  font-weight: 300;
-  font-size: 1.5rem;
-}
+var contained = document.getElementById("load-contained");
 
-.card-signin .card-body {
-  padding: 2rem;
-}
+var geometries = document.createElement("p");
+geometries.innerHTML =
+  "<br/>&#9744;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eligiendo un nombre para el chatbot";
+geometries.className = "info";
 
-.form-signin {
-  width: 150%;
-}
-</style>
+var textures = document.createElement("p");
+textures.innerHTML =
+  "&#9744;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Educando al chatbot";
+textures.className = geometries.className = "info";
+
+var objects = document.createElement("p");
+objects.innerHTML = "<br/>Cargando...";
+objects.className = geometries.className = "info";
+
+setTimeout(function () {
+  contained.appendChild(geometries);
+  setTimeout(function () {
+    geometries.innerHTML =
+      "<br/>&#9745;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eligiendo un nombre para el chatbot";
+    contained.appendChild(textures);
+    setTimeout(function () {
+      textures.innerHTML =
+        "&#9745;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Educando al chatbot (con mucho cariño)";
+      contained.appendChild(objects);
+    }, 800);
+  }, 800);
+}, 0);
+
+  </script>
+
+  <script>
+var timer = setTimeout(function() {
+window.location="http://example.com"
+}, 5000);
+</script>

@@ -1,0 +1,139 @@
+body { 
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+.navbar {
+  background: rgb(0,0,0,0.9);
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  min-width: 100vh;
+}
+
+.caption {
+  position: absolute;
+  top: 38%;
+  width: 100%;
+  color: white;
+}
+
+.caption h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1.6rem;
+}
+.caption h3 {
+  font-size: 2rem;
+  padding-bottom: 1.6rem
+}
+
+@media (max-width: 768 px){
+.caption h1 {
+    font-size: 1.4em;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+.caption h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1.2rem;
+  }
+.col.md-8 h1 {
+  font-size: 1.7rem:
+  }
+}
+
+
+.social-menu ul {
+  position: absolute;
+  top: 93%;
+  left: 93%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.social-menu ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+.social-menu ul li .fa {
+  color: #000000;
+  font-size: 25px;
+  line-height: 50px;
+  transition: .5s;
+}
+.social-menu ul li .fa:hover {
+  color: #ffffff;
+}
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0,0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+  background-color: #0077B5;
+}
+
+
+
+.social-menu ul > li > a {
+  display: block;
+  color: white;
+  background-color: rgba(0, 46, 102, 0.8);
+  border-radius: 100%;
+  font-size: 2rem;
+  line-height: 4rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
